@@ -10,8 +10,7 @@ namespace P04.Santa_sSecretHelper
         {
             int decriptionValueKey = int.Parse(Console.ReadLine());
 
-            string validInfoPatter = @"@(?<name>[A-Za-z]+)([^@\-!\:\>]*?)!(?<behavior>[G|N])!";
-            Regex regex = new Regex(validInfoPatter);
+            Regex regex = new Regex(@"@(?<name>[A-Za-z]+)([^@\-!\:\>]*?)!(?<behavior>[G|N])!");
 
             string currChildInfo;
 
